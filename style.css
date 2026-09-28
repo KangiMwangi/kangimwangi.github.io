@@ -40,36 +40,31 @@ a{color:inherit;}
 .navlinks a:hover{border-bottom-color:var(--gold);}
 
 /* hero */
-.hero{
-  display:grid;
-  grid-template-columns: 1.5fr 1fr;
-  align-items:end;
-  gap:2rem;
-  max-width:1160px;
-  margin:0 auto;
-  padding:4.5rem 1.5rem 5rem;
+.brand{
+  display:flex;
+  align-items:center;
+  gap:0.55rem;
 }
-.kicker{font-size:0.85rem; color:var(--muted); margin-bottom:1.6rem;}
-.hero h1{
-  font-size:clamp(2.1rem, 4.4vw, 3.2rem);
-  line-height:1.12;
-  max-width:16ch;
-  margin-bottom:1.6rem;
-}
-.hero-lede{max-width:52ch; color:var(--ink); margin-bottom:1rem; font-size:1.02rem;}
-.hero-actions{margin-top:1.6rem; display:flex; gap:1rem;}
-.btn{
-  font-size:0.85rem; text-decoration:none; padding:0.7rem 1.3rem; display:inline-block;
-  border:1px solid var(--ink);
-}
-.btn-primary{background:var(--ink); color:var(--paper);}
-.btn-ghost{background:transparent; color:var(--ink);}
-.btn:hover{opacity:0.75;}
+
 .hero-mark{
-  justify-self:end;
-  transform: translateY(18%) rotate(-2deg);
+  display:flex;
+  align-items:center;
+  transform:rotate(-2deg);
 }
-.hero-mark img{width:100%; max-width:210px; display:block;}
+
+.hero-mark img{
+  width:32px;
+  height:32px;
+  object-fit:contain;
+  display:block;
+}
+
+.wordmark{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:1.05rem;
+  text-decoration:none;
+}
 
 /* rail/main grid rows */
 .row{
