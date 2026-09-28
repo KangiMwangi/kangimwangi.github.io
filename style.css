@@ -34,7 +34,7 @@ p{margin-bottom:.9rem;max-width:62ch}
 main,.hero,.dark,.topnav{position:relative;z-index:1}
 
 /* nav */
-.topnav{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.5rem;background:rgba(0,30,52,1.000);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.topnav{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.5rem;background:	rgb(0,30,52);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
 .wordmark{display:flex;align-items:center;gap:.65rem;font-family:var(--serif);font-weight:600;font-size:1.08rem;text-decoration:none}
 .wordmark img{height:34px;width:auto;display:block}
 .navlinks{display:flex;gap:1.5rem;font-size:.86rem}
