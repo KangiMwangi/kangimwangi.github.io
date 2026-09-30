@@ -82,6 +82,14 @@
     });
   }
 
+  // if the browser restores this page from its back-forward cache instead
+  // of truly reloading it, this script never re-runs and everything just
+  // sits in its finished state. force a real reload in that one case so
+  // the load sequence and reveals play again.
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) { window.location.reload(); }
+  });
+
   // grid glow follows a fine pointer
   var glow = document.querySelector('.gridglow');
   if (glow && !reduce && window.matchMedia('(pointer: fine)').matches) {
