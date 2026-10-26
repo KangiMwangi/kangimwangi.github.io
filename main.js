@@ -103,3 +103,5 @@
 
 const tn=document.querySelector('.topnav'),mb=document.querySelector('.menu');
 if(tn&&mb){mb.addEventListener('click',()=>mb.setAttribute('aria-expanded',tn.classList.toggle('open')));tn.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>{tn.classList.remove('open');mb.setAttribute('aria-expanded','false')}))}
+
+document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',()=>{document.body.dataset.cur=b.dataset.cur;document.querySelectorAll('.seg button').forEach(x=>x.classList.toggle('on',x===b))}));

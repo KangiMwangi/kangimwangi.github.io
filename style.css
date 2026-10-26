@@ -10,13 +10,13 @@
   --panel-text:#EAE3D3;
   --panel-muted:#A39B86;
   --panel-line:#2E2A22;
-  --serif:"Fraunces", Georgia, serif;
-  --sans:"IBM Plex Sans", Helvetica, Arial, sans-serif;
+  --serif:"Bricolage Grotesque",Helvetica,Arial,sans-serif;/* headline + UI face */
+  --sans:"DM Serif Text",Georgia,serif;/* body face */--disp:"DM Serif Display",Georgia,serif;
   --wrap:calc(1160px + 3rem);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;font-size:18px;font-synthesis:none;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 img{max-width:100%}
 :focus-visible{outline:2px solid var(--blue);outline-offset:3px}
@@ -321,3 +321,12 @@ svg .dg-t{font-weight:600}
 .gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:.8rem;margin-right:-1.2rem;padding-right:1.2rem}.gi,.gi.w3{flex:0 0 76vw;scroll-snap-align:start;aspect-ratio:4/5}
 .strip-s{padding:0 1.2rem 2.5rem}.gal.strip{margin:0}}
 @media(prefers-reduced-motion:reduce){.js .gal[data-reveal] .gi{clip-path:none!important}}
+
+/* v6: Bricolage = headlines + UI, DM Serif Text = body, DM Serif Display = stat and pull quotes */
+.btn,.card .k,.contact .foot-line,.foot-line,.kicker,.menu,.more,.navlinks a,.pill,.rail-label,.seg button,.tags,.tier .t,.toolkit th,h4{font-family:var(--serif)}
+.stat-num,.quote,.about-lead,.pull p{font-family:var(--disp)}.case-sub,.contact .ask{font-family:var(--sans)}svg text{font-family:var(--serif)}
+h1,h2,h3{font-weight:600;letter-spacing:-.025em}.big-lede{font-weight:500}strong,b{font-family:var(--serif);font-weight:600}
+.seg{display:inline-flex;border:1px solid var(--line);margin-top:1.6rem}.seg button{font-family:var(--serif);font-size:.9rem;background:none;border:0;padding:.7rem 1.2rem;min-height:44px;cursor:pointer;color:var(--muted)}.seg button.on{background:var(--ink);color:var(--paper)}
+body[data-cur=usd] .kes,body[data-cur=kes] .usd{display:none}
+.card ul{margin:.8rem 0 0;padding-left:1.1rem;font-size:.95rem}.card li{margin:.25rem 0}.card .tag-line{font-size:1.02rem;margin:.1rem 0 0}
+.tier{border-top:1px solid var(--line);margin-top:1.1rem;padding-top:.9rem}.tier .t{font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}.tier .pr{margin:.2rem 0 .3rem}.tier p{margin:0;font-size:.92rem}
